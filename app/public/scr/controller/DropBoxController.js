@@ -8,17 +8,17 @@ class DropBoxController {
   }
 
   initEvents() {
-    this.btnSendFileEl.addEventListener("click", (event) => {
+    this.btnSendFileEl.addEventListener('click', (event) => {
 
       this.inputFilesEl.click();
       
     });
 
-    this.inputFilesEl.addEventListener("change", (event) => {
+    this.inputFilesEl.addEventListener('change', (event) => {
 
       this.uploadTask(event.target.files);
 
-      this.snackModalEl.style.display = "block";
+      this.snackModalEl.style.display = 'block';
 
     });
   }
@@ -43,8 +43,7 @@ class DropBoxController {
             resolve(JSON.parse(ajax.responseText));
 
           } catch (e){
-
-
+            
             reject(e);
 
           }
