@@ -1,7 +1,7 @@
 class DropBoxController {
   constructor() {
 
-    this.currentFolder = ['adrfold'];
+    this.currentFolder = ['Home'];
 
     this.onselectionchange = new Event("selectionchange");
 
